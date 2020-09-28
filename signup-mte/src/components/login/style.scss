@@ -322,6 +322,12 @@ input:focus {
   background-position: 86% 50%;
 }
 
+#password {
+  background: url(../login/images/lock-solid.png);
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+}
+
 // ALTERNATIVE GREEN ASTERISK SOLUTION
 //I wanted to use this as a solution for the
 //Green asterisk but the webkit placeholer does not seem to
