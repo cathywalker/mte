@@ -1,0 +1,113 @@
+//Custom Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+$base-colour: #293845;
+$green-colour: #1ab188;
+$grey-colour: #43525a;
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+  background-color: #aaa;
+}
+
+.App-link {
+  color: #1ab188;
+}
+
+//Login Main Container
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99;
+}
+.content {
+  width: 30em;
+}
+
+//Button styling
+.btn {
+  font-size: 22px;
+  border: 0px;
+  background-color: $green-colour;
+  color: white;
+  border-radius: 0px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $green-colour;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+//used to toggle signup and login
+.btn-selected {
+  font-size: 22px;
+  border: 0px;
+  background-color: $green-colour;
+  color: white;
+  border-radius: 0px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $green-colour;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+//used to toggle signup and login
+.btn-unselected {
+  font-size: 22px;
+  border: 0px;
+  background-color: $grey-colour;
+  color: white;
+  border-radius: 0px;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $green-colour;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-submit {
+  width: 100%;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: $green-colour;
+}
+
+@media only screen and (max-width: 500px) {
+  .btn-submit {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .btn-selected,
+  .btn-unselected {
+    font-size: 16px;
+  }
+  .content {
+    width: 100%;
+    background-color: black;
+  }
+}
